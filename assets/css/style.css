@@ -1,0 +1,21 @@
+.btn{
+	margin:2px;
+}
+.navbar-form{
+	position: fixed;
+	margin-left: 150px;
+	top: 120px;
+	right: 50px;
+	background-color: white;
+}
+img{
+	margin:10px;
+}
+p{
+	font-weight: bold;
+}
+#submit{
+	margin-top: 8px;
+	color: white;
+	background-color: #258e8e;
+}
