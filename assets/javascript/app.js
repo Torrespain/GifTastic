@@ -31,7 +31,7 @@ $("#submit").on("click",function(event){		//Function to add new buttons
 });
 
 function gifSearch(term){		//Requesting info and adding the value of the button to the url
-	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + term + "&api_key=dc6zaTOxFJmzC&limit=5";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + term + "&api_key=dc6zaTOxFJmzC&limit=6";
 	$.ajax({
     url: queryURL,
     method: "GET"
@@ -42,6 +42,7 @@ function gifSearch(term){		//Requesting info and adding the value of the button 
 }
 
 function generateGifs(data){		//this function loops through the search results and adds the attributes and the images to the html
+	$("#imageContainer").empty();
 	for (var i = 0; i < data.length; i++) {
 		var still=data[i].images.original_still.url;
 		var animate=data[i].images.original.url;

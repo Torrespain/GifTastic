@@ -18,6 +18,10 @@ body{
 }
 img{
 	margin:10px;
+	max-width: 350px;
+	max-height: 300px;
+	
+
 }
 p{
 	font-weight: bold;
